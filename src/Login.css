@@ -1,76 +1,145 @@
 /* Center the login form on the page */
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-  }
-  
-  /* Login box */
-  .login-box {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  /* Title */
-  h2 {
-    margin-bottom: 1.5rem;
-    color: #333;
-  }
-  
-  /* Form inputs */
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-  }
-  
-  input:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
-  /* Login button */
-  button {
-    width: 100%;
-    background: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  
-  /* Error message */
-  .message {
-    margin-top: 1rem;
-    color: red;
-  }
-  
-  /* Signup text */
-  .signup-text {
-    margin-top: 1rem;
-    font-size: 14px;
-  }
-  
-  .signup-text a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./img/Wheat1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Login box with semi-transparent white background */
+.login-box {
+  background: rgba(255, 255, 255, 0.6); /* 80% opaque white */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Label styling */
+.input-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+.input-icon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #218838;
+}
+
+.input-clear-icon {
+  font-size: 20px;
+  color: #218838;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* Password toggle icon */
+.password-toggle-icon {
+  cursor: pointer;
+  margin-left: 8px;
+  color: #218838;
+}
+
+/* Input styling */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.input-field:focus {
+  border: 2px solid #ffffff;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Form inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Login button */
+button {
+  width: 100%;
+  margin: 1rem 0 0;
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Error message */
+.message {
+  margin-top: 1rem;
+  color: red;
+}
+
+/* Forgot Password link */
+.forgot-text {
+  margin: 15px;
+  margin-top: 5px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.forgot-text a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgot-text a:hover {
+  color: #218838;
+}
+
+/* Signup text */
+.signup-text {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #4caf50;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.signup-text a:hover {
+  color: #218838;
+}

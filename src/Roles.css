@@ -1,0 +1,62 @@
+/* Container for the entire Roles screen */
+.roles-container {
+  margin: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Each row inside the container */
+.roles-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* First row: images spaced evenly */
+.images-row {
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+/* Style for each role image */
+.role-image {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.role-image:hover {
+  transform: scale(1.05);
+}
+
+/* Second row: text items spaced evenly */
+.texts-row {
+  justify-content: space-around;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Role text styling */
+.role-text {
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.role-text:hover {
+  color: #127810;
+}
+
+/* Third row: centered question styling */
+.question-row h2 {
+  margin: 5rem 0;
+  text-align: center;
+  color: #218838;
+  font-size: 24px;
+}

@@ -1,76 +1,81 @@
-/* General container styling */
+/* Dashboard container covers full screen */
 .dashboard-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full screen height */
-    background-color: #f4f4f4;
-    padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding-top: 60px; /* Space for navbar */
+}
+
+/* Navigation Bar positioned at the top left */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #218838; /* Green background */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 100;
+  justify-content: flex-start;
+}
+
+/* Profile icon container */
+.navbar-profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Log Out text styling */
+.logout-text {
+  margin-left: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Main Content Centered */
+.dashboard-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 10px;
+    height: 50px;
   }
-  
-  /* Dashboard box */
-  .dashboard-box {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
+  .navbar-profile {
+    transform: scale(0.9);
   }
-  
-  /* Welcome text */
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  .logout-text {
+    font-size: 14px;
   }
-  
-  /* Logout button */
-  .logout-btn {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
+  .dashboard-content h2 {
+    font-size: 20px;
   }
-  
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .dashboard-box {
-      padding: 30px;
-      width: 90%;
-    }
-  
-    h2 {
-      font-size: 22px;
-    }
-  
-    .logout-btn {
-      font-size: 14px;
-      padding: 10px 16px;
-    }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 45px;
   }
-  
-  @media (max-width: 480px) {
-    .dashboard-box {
-      padding: 20px;
-    }
-  
-    h2 {
-      font-size: 20px;
-    }
-  
-    p {
-      font-size: 14px;
-    }
-  
-    .logout-btn {
-      font-size: 14px;
-      padding: 8px 14px;
-    }
+  .navbar-profile {
+    transform: scale(0.8);
   }
-  
+  .logout-text {
+    font-size: 12px;
+  }
+  .dashboard-content h2 {
+    font-size: 18px;
+  }
+}

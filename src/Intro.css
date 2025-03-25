@@ -1,0 +1,23 @@
+.intro-container {
+  background-color: #4caf50; /* Main green background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.intro-logo {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.intro-title {
+  font-size: 48px; /* Big font */
+  color: #16d429; /* Text color */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+  margin: 0;
+}

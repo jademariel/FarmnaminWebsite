@@ -1,82 +1,157 @@
 /* Center the signup form */
 .signup-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-  }
-  
-  /* Signup box */
-  .signup-box {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  /* Title */
-  h2 {
-    margin-bottom: 1.5rem;
-    color: #333;
-  }
-  
-  /* Form inputs */
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-  }
-  
-  input:focus {
-    outline: none;
-    border-color: #28a745;
-  }
-  
-  /* Signup button */
-  button {
-    width: 100%;
-    background: #28a745;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background: #218838;
-  }
-  
-  /* Error/Success message */
-  .message {
-    margin-top: 1rem;
-    color: red;
-  }
-  
-  /* Login text */
-  .login-text {
-    margin-top: 1rem;
-    font-size: 14px;
-  }
-  
-  .login-text a {
-    color: #28a745;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .login-text a:hover {
-    color: #218838;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./img/Wheat1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Signup box */
+.signup-box {
+  background: rgba(255, 255, 255, 0.6); /* 80% opaque white */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Input styling */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.input-field:focus {
+  border: 2px solid #ffffff;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Form inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #28a745;
+}
+
+.contact-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-input span {
+  margin-top: -14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  background-color: #eee;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.contact-input input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  transition: border-color 0.3s;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Signup button */
+button {
+  width: 100%;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+/* Error/Success message */
+.message {
+  margin-top: 1rem;
+  color: red;
+}
+
+/* Login text */
+.login-text {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.login-text a:hover {
+  color: #218838;
+}
+
+.terms-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.terms-container input {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.terms-container label {
+  font-size: 14px;
+  color: #333;
+}
+
+.terms-container a {
+  color: #218838;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.terms-container a:hover {
+  text-decoration: underline;
+}

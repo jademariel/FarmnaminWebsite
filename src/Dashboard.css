@@ -1,0 +1,76 @@
+/* General container styling */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  /* Dashboard box */
+  .dashboard-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Welcome text */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Logout button */
+  .logout-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .dashboard-box {
+      padding: 30px;
+      width: 90%;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  
+    .logout-btn {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard-box {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    .logout-btn {
+      font-size: 14px;
+      padding: 8px 14px;
+    }
+  }
+  
